@@ -20,16 +20,20 @@ También es posible instalar versiones anteriores del Xcode:
 * Obtenga una cuenta de desarrollador gratuita con su ID de Apple [Más información acá](https://www.actualidadiphone.com/como-crear-una-cuenta-de-desarrollador-de-apple-para-usarla-en-xcode/)
 * Vaya a https://developer.apple.com/download e inicie sesión
 * Haga clic en "More" en la parte superior derecha de la página:
-![More Button](xcode_download_1.png "More Button")
+
+  <img src="xcode_download_1.png" alt="" width="400"/> 
 * Utilice el campo de búsqueda para encontrar versiones anteriores de Xcode
-![Find](xcode_download_2.png "Find")
+
+  <img src="xcode_download_2.png" alt="" width="300"/> 
 * Cuando haya encontrado Xcode 12.4, el ".dmg" para comenzar la instalación.
-![Find](xcode_download_3.png "Find")
+
+  <img src="xcode_download_3.png" alt="" width="250"/> 
 
 ### Empezando con Xcode
 
 Esta es la pantalla de bienvenida:
-![Welcome](welcome.png "Welcome")
+
+<img src="welcome.png" alt="" width="300"/> 
 
 Las opciones son:
 * Iniciar un proyecto de cero
@@ -39,17 +43,19 @@ Las opciones son:
 
 Elijamos la opción "Create a new Xcode project":
 
-A continuación, cuando abre un proyecto de aplicación de iOS en Xcode, verá algo aí:
-![Create](create_1.png "create_1")
+A continuación, cuando abre un proyecto de aplicación de iOS en Xcode, verá algo así:
+
+<img src="create_1.png" alt="" width="300"/> 
+
 Elija "iOS" (1) y luego "App" (2)
 
 A continuación introduzca el nombre de la App, y el nombre de la organización:
 
-![Create](create_2.png "create_2")
+<img src="create_2.png" alt="" width="300"/> 
 
 Elija la ubicación de dónde crear el proyecto:
 
-![Create](create_3.png "create_3")
+<img src="create_3.png" alt="" width="300"/> 
 
 Finalmente aparecerá la pantalla principal del proyecto:
 
