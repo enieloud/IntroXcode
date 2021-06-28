@@ -204,4 +204,5 @@ Estas restricciones funcionarán para un iPhone 7 o un iPad de 12.9 pulgadas.
 Autolayout es un tema amplio, podemos encontrar más información acá:
 
 https://www.efectoapple.com/introduccion-a-auto-layout-parte-i/
+
 https://www.efectoapple.com/introduccion-a-auto-layout-parte-2/
