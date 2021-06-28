@@ -21,18 +21,18 @@ También es posible instalar versiones anteriores del Xcode:
 * Vaya a https://developer.apple.com/download e inicie sesión
 * Haga clic en "More" en la parte superior derecha de la página:
 
-  <img src="xcode_download_1.png" alt="" width="400"/> 
+  <img src="xcode_download_1.png" alt="" width="500"/> 
 * Utilice el campo de búsqueda para encontrar versiones anteriores de Xcode
 
-  <img src="xcode_download_2.png" alt="" width="300"/> 
+  <img src="xcode_download_2.png" alt="" width="500"/> 
 * Cuando haya encontrado Xcode 12.4, el ".dmg" para comenzar la instalación.
 
-  <img src="xcode_download_3.png" alt="" width="250"/> 
+  <img src="xcode_download_3.png" alt="" width="350"/> 
 
 ## Proyecto Trivia
 A lo largo de este tutorial vamos a ir desarrollando una App de Trivia (preguntas y respuestas) basadas en una API pública llamada [Open Trivia](https://opentdb.com/).
 
-<img src="pregunta.png" alt="" width="180" />
+<img src="pregunta.png" alt="" width="200" />
 
 ## Primeros pasos en Xcode
 
@@ -40,7 +40,7 @@ A lo largo de este tutorial vamos a ir desarrollando una App de Trivia (pregunta
 
 Esta es la pantalla de bienvenida:
 
-<img src="welcome.png" alt="" width="300"/> 
+<img src="welcome.png" alt="" width="500"/> 
 
 Las opciones son:
 * Iniciar un proyecto de cero
@@ -167,3 +167,41 @@ En breve veremos un poco sobre como usar **"Layout Constraints"** para poder esp
 Para **elegir la imagen** deberemos oprimir el ícono de "Inspector de Atributos", y seleccionar la imagen que fue previamente importada a los Assets del proyecto.
 
 <img src="elegir_imagen.png" alt="" width="800"/>
+
+**Auto Layout**
+
+Auto Layout es un sistema para dimensionar y ubicar los elementos en la vista. Permite especificar las distancias relativas y absolutas entre los elementos y los márgenes de la vista. Dichas reglas son conocidas como "Constraints" (restricciones).
+
+Por ejemplo, puede agregar una restricción que diga que un elemento debe estar 20 puntos por debajo del elemento que está encima. 
+
+Con un mínimo de restricciones, el sistema de Auto Layout tiene la información necesaria para diseñar la interfaz de usuario. Sin embargo, con demasiadas restricciones podría suceder que halla restricciones en conflicto: Ejemplo por una regla se infiere que el ancho son 20 puntos, pero otra al mismo tiempo especifica 30 puntos. Cuando hay restricciones en conflicto Xcode avisará.
+
+Para agregar restricciones, use los botones en la esquina inferior derecha del Interface Builder:
+
+<img src="constraints_1.png" alt="" width="250"/>
+
+Acá hemos agregado tres restricciones: 
+1. Ancho fijo de 132 puntos 
+2. Alto fijo de 132 puntos 
+3. Distancia al margen superior de 58 puntos
+
+En vertical ya es posible ubicar al elemento: Tenemos su altura, y margen superior, sin embargo en horizontal tenemos el ancho, pero falta la ubicación horizontal. Vamos a agregar una restricción para que la imagen esté centrada horizontalmente respecto a la vista:
+
+Arrastre desde la imágen hacia algún borde (izquierdo o derecho) con la tecla control presionada:
+
+<img src="control_drag.png" alt="" width="250"/>
+
+A continuación aparecerá el siguiente menú:
+
+<img src="center_horizontal.png" alt="" width="250"/>
+
+Ya fueron especificados todos los constraints, mínimos pero suficientes para ubicar el logo en el centro y la parte superior de la vista:
+
+<img src="constraints.png" alt="" width="250"/>
+
+Estas restricciones funcionarán para un iPhone 7 o un iPad de 12.9 pulgadas.
+
+Autolayout es un tema amplio, podemos encontrar más información acá:
+
+https://www.efectoapple.com/introduccion-a-auto-layout-parte-i/
+https://www.efectoapple.com/introduccion-a-auto-layout-parte-2/
