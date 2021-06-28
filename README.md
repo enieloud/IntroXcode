@@ -1,4 +1,4 @@
-### ¿Qué es Xcode?
+## ¿Qué es Xcode?
 Xcode es la aplicación de Mac usada para crear aplicaciones iOS, macOS, tvOS y watchOS, es todo un entorno de desarrollo integrado, lo que esencialmente significa que Xcode incluye muchas herramientas adicionales para el desarrollo como depurador, control de código fuente, administración de dispositivos, iPhone Simulator, herramientas de creación de perfiles, Interface Builder, documentación y más. Está pensado principalmente para compilar Swift y Objective C, pero soporta otros lenguajes como C / C++, AppleScript, Java y más.
 
 Xcode solo se ejecuta en macOS: necesita una Mac si desea crear aplicaciones de iOS con Xcode. Xcode no se ejecutará en iPad. Hay algunas alternativas disponibles para Windows / PC, pero están lejos de ser ideales.
@@ -9,7 +9,7 @@ Requisitos mínimos del sistema para Xcode 12:
 * 8 GB de RAM pero 16 para más comodidad
 * Al menos una CPU equivalente a Intel i5 o i7
 
-### Descarga del Xcode
+## Descarga del Xcode
 La forma más sencilla es mediante el siguiente link directo a la App Store:
 [Descargar Xcode desde la App Store](https://apps.apple.com/us/app/xcode/id497799835?mt=12)
 
@@ -29,7 +29,14 @@ También es posible instalar versiones anteriores del Xcode:
 
   <img src="xcode_download_3.png" alt="" width="250"/> 
 
-### Empezando con Xcode
+## Proyecto Trivia
+A lo largo de este tutorial vamos a ir desarrollando una App de Trivia (preguntas y respuestas) basadas en una API pública llamada [Open Trivia](https://opentdb.com/).
+
+<img src="pregunta.png" alt="" width="180" />
+
+## Primeros pasos en Xcode
+
+### 1. Creando el Proyecto Trivia
 
 Esta es la pantalla de bienvenida:
 
@@ -74,11 +81,12 @@ Tenemos 4 áreas principales en Xcode:
     <img src="callStack.png" alt="" width="230"/>
 
 **Otros elementos de la pantalla principal**:
+
 * En la esquina superior derecha están los botones de Ejecutar y Detener el programa:
 
     <img src="ejecutarDetener.png" alt="" width="250"/> 
 
-    Justo al lado hay dos menúes desplegables: Uno permite elegir el Target y el otro menú  permite elegir el dispositivo o simulador donde se ejecutará el programa:
+* Justo al lado hay dos menúes desplegables: Uno permite elegir el Target y el otro menú  permite elegir el dispositivo o simulador donde se ejecutará el programa:
 
     <img src="target.png" alt="" width="230"/> 
 
@@ -86,6 +94,76 @@ Tenemos 4 áreas principales en Xcode:
 
 
 * En la parte superior, en el medio, hay una barra de estado donde Xcode indica lo que está haciendo, y los errores del proyecto.
-* En la parte superior derecha, hay botones que permiten mostrar u ocultar partes de Xcode. Si desea centrarse en algún código Swift, puede ocultar los paneles izquierdo y derecho, por ejemplo. El botón + es la Biblioteca, que incluye fragmentos de código Swift (y más, en Interface Builder). El botón con las dos flechas habilita el modo de revisión de código de Xcode, que le permite comparar archivos Swift uno al lado del otro.
-El editor de código en Xcode tiene dos funciones interesantes: una ruta de navegación y un minimapa. El minimapa es un esquema global de su código y funciona como una barra de desplazamiento. La ruta de navegación, o barra de salto, le ayuda a navegar por la jerarquía de su proyecto. También puede usarlo para saltar a una función o clase en particular. Y los botones <y> de la izquierda le permiten retroceder o avanzar a un archivo anterior, como en un navegador web.
-A continuación, en este tutorial, veremos algunas partes de Xcode con más detalle ...
+
+    <img src="status.png" alt="" width="240"/>
+
+* En la parte superior derecha, e izquierda hay botones que permiten mostrar u ocultar partes de Xcode. Si desea centrarse en algún código Swift, puede ocultar los paneles izquierdo y derecho, por ejemplo. 
+
+    <img src="botones-ocultar-paneles.png" alt="" width="440"/>
+
+* El botón + es la Biblioteca, que incluye fragmentos de código Swift (y más, en Interface Builder). 
+
+* El botón con las dos flechas habilita el modo de revisión de código de Xcode, que le permite comparar archivos Swift uno al lado del otro.
+
+    <img src="flechasYmas.png" alt="" width="80"/>
+
+### 2. Pantalla inicial de la App
+En el paso anterior creamos la App.
+
+Si oprimimos el botón "Ejecutar", la App se verá así:
+
+<img src="appVacia.png" alt="" width="200"/>
+
+Es hora de empezar a introducir contenido en nuestra App.
+
+**Agregar una imagen al cátalogo de Imágenes: Assets.xcassets**
+
+Cuando crea un nuevo proyecto, Xcode crea un catálogo llamado Assets.xcassets. 
+
+Seleccione **Assets.xcassets** en el navegador de proyectos: 
+
+<img src="assets.png" alt="" width="250"/>
+
+y Xcode abrirá el catálogo en el área del editor.
+
+<img src="assetsEditor.png" alt="" width="350"/>
+
+El catálogo de activos contiene una lista de conjuntos de imágenes. Cada conjunto de imágenes, como AppIcon en la captura de pantalla, contiene todas las versiones de una imagen que son necesarias para admitir varios dispositivos y factores de escala. Puede agregar imágenes de iconos a su aplicación arrastrándolas a la celda correspondiente en la cuadrícula de conjunto de iconos.
+
+Agregaremos el logo "alkemy-logo.png" a nuestro proyecto:
+
+<img src="alkemy-logo.png" alt="" width="100"/>
+
+Para esto arrastraremos desde el "Finder" el logo:
+
+<img src="assets_logo.png" alt="" width="200"/>
+
+Se verá así:
+
+<img src="logo_agregado.png" alt="" width="450"/>
+
+**Agregar a la App mediante el Interface Builder**
+
+Como al crear el proyecto elegimos "Storyboards", Xcode creó un archivo: *Main.storyboard*:
+
+Al elegir dicho archivo en el navegador del proyecto se abre el *Interface Builder*:
+
+<img src="IntfBuilder0.png" alt="" width="800"/>
+
+La **biblioteca de objetos** es un panel donde puede buscar elementos de la interfaz de usuario: Botones, Etiquetas, Campos de Texto, etc.
+
+Para agregarlos al Storyboard deberá arrastrarlos y soltarlos en la vista.
+
+<img src="object_library.png" alt="" width="800"/>
+
+Luego de haber ubicado el visor de la imagen podrá usar los "handlers" para modificar el tamaño de la imagen.
+
+A la derecha está el "Inspector de Tamaño" que permite modificar el tamaño del elemento seleccionado.
+
+<img src="size_inspector.png" alt="" width="800"/>
+
+En breve veremos un poco sobre como usar **"Layout Constraints"** para poder especificar el tamaño y ubicación de los elementos.
+
+Para **elegir la imagen** deberemos oprimir el ícono de "Inspector de Atributos", y seleccionar la imagen que fue previamente importada a los Assets del proyecto.
+
+<img src="elegir_imagen.png" alt="" width="800"/>
