@@ -52,17 +52,17 @@ Elijamos la opción "Create a new Xcode project":
 
 A continuación, cuando abre un proyecto de aplicación de iOS en Xcode, verá algo así:
 
-<img src="create_1.png" alt="" width="300"/> 
+<img src="create_1.png" alt="" width="500"/> 
 
 Elija "iOS" (1) y luego "App" (2)
 
 A continuación introduzca el nombre de la App, y el nombre de la organización:
 
-<img src="create_2.png" alt="" width="300"/> 
+<img src="create_2.png" alt="" width="500"/> 
 
 Elija la ubicación de dónde crear el proyecto:
 
-<img src="create_3.png" alt="" width="300"/> 
+<img src="create_3.png" alt="" width="500"/> 
 
 Finalmente aparecerá la pantalla principal del proyecto:
 
