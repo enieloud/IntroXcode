@@ -206,3 +206,13 @@ Autolayout es un tema amplio, podemos encontrar más información acá:
 https://www.efectoapple.com/introduccion-a-auto-layout-parte-i/
 
 https://www.efectoapple.com/introduccion-a-auto-layout-parte-2/
+
+
+**Vista Jerárquica**
+
+Es el panel que está a la izquierda del editor del Interface Builder.
+Es un elemento importante porque le muestra la jerarquía visual de todos los elementos que ha agregado a la vista. También enumera todos los *constraints*.
+
+Puede ocultar / mostrar mediante el pequeño botón como muestra la imagen:
+
+<img src="vista_jerarquica.png" alt="" width="375"/>
