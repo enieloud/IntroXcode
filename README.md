@@ -82,7 +82,7 @@ Tenemos 4 áreas principales en Xcode:
 
 **Otros elementos de la pantalla principal**:
 
-* En la esquina superior derecha están los botones de Ejecutar y Detener el programa:
+* En la esquina superior izquierda están los botones de Ejecutar y Detener el programa:
 
     <img src="ejecutarDetener.png" alt="" width="250"/> 
 
@@ -90,7 +90,7 @@ Tenemos 4 áreas principales en Xcode:
 
     <img src="target.png" alt="" width="230"/> 
 
-    Target es el producto final, normalmente es una App, pero podría ser una librería, framework, unit test, etc. Mientras que el simulador o dispositivo permite elegir sobre qué dispositivo, ya sea virtual o físico se ejecutará la App. En la práctica normalmente target no se toca, mientras que el dispositivo se cambia continuamente para probar en distintos modelos de iPhone.
+    **Target** es el producto final, normalmente es una App, pero podría ser una librería, framework, unit test, etc. Mientras que el **simulador o dispositivo** permite elegir sobre qué dispositivo, ya sea virtual o físico se ejecutará la App. En la práctica normalmente target no se toca, mientras que el dispositivo se cambia continuamente para probar en distintos modelos de iPhone.
 
 
 * En la parte superior, en el medio, hay una barra de estado donde Xcode indica lo que está haciendo, y los errores del proyecto.
