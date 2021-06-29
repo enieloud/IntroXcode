@@ -128,9 +128,9 @@ y Xcode abrirá el catálogo en el área del editor.
 
 <img src="assetsEditor.png" alt="" width="350"/>
 
-El catálogo de activos contiene una lista de conjuntos de imágenes. Cada conjunto de imágenes, como AppIcon en la captura de pantalla, contiene todas las versiones de una imagen que son necesarias para admitir varios dispositivos y factores de escala. Puede agregar imágenes de iconos a su aplicación arrastrándolas a la celda correspondiente en la cuadrícula de conjunto de iconos.
+El catálogo de assets contiene una lista de conjuntos de imágenes. Cada conjunto de imágenes, como AppIcon en la captura de pantalla, contiene todas las versiones de una imagen que son necesarias para admitir varios dispositivos y factores de escala. Puede agregar imágenes de iconos a su aplicación arrastrándolas a la celda correspondiente en la cuadrícula de conjunto de iconos.
 
-Agregaremos el logo "alkemy-logo.png" a nuestro proyecto:
+Agregaremos el logo `alkemy-logo.png` a nuestro proyecto:
 
 <img src="alkemy-logo.png" alt="" width="100"/>
 
