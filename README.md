@@ -199,9 +199,9 @@ Ya fueron especificados todos los constraints, mínimos pero suficientes para ub
 
 <img src="constraints.png" alt="" width="250"/>
 
-Estas restricciones funcionarán para un iPhone 7 o un iPad de 12.9 pulgadas.
+Estas restricciones funcionarán en distintos modelos de dispositivos iOS, desde un iPhone 7, hasta un gigantesto iPad de 12.9 pulgadas.
 
-Autolayout es un tema amplio, podemos encontrar más información acá:
+Autolayout es un tema amplio, hay mucho material y videos online. Un buen punto de partida es el siguiente tutorial:
 
 https://www.efectoapple.com/introduccion-a-auto-layout-parte-i/
 
@@ -231,6 +231,7 @@ Estos elementos los agregaremos desde el *Interface Builder*, y veremos en breve
 Para agregar los elementos hacemos lo mismo que en la sección anterior:
 1. Oprimimos en la librería de objetos 
 2. Arrastramos los elementos a la vista
+3. Ubicar los elementos en la vista y dimensionarlos. Eventualmente cuando agreguemos los "constraints" los elementos van a tener la ubicación y dimensiones correctas a lo largo de los distintos modelos de dispositivos.
 
 <img src="mas_elementos.png" alt="" width="640"/>
 
