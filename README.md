@@ -207,8 +207,7 @@ https://www.efectoapple.com/introduccion-a-auto-layout-parte-i/
 
 https://www.efectoapple.com/introduccion-a-auto-layout-parte-2/
 
-
-**Vista Jerárquica**
+**Vista Jerárquica de Interface Builder**
 
 Es el panel que está a la izquierda del editor del Interface Builder.
 Es un elemento importante porque le muestra la jerarquía visual de todos los elementos que ha agregado a la vista. También enumera todos los *constraints*.
@@ -216,3 +215,48 @@ Es un elemento importante porque le muestra la jerarquía visual de todos los el
 Puede ocultar / mostrar mediante el pequeño botón como muestra la imagen:
 
 <img src="vista_jerarquica.png" alt="" width="375"/>
+
+### 3. Más elementos a nuestra "Trivia App"
+
+Hasta el momento hemos solamente agregado una imagen a la pantalla principal. Por ahora nuestra App no hace mucho, al ejecutarla veremos lo siguiente:
+
+<img src="app_con_logo.png" alt="" width="200"/>
+
+En breve agregaremos a nuestro proyecto de trivia más elementos: Etiquetas, un Botón, y un Cuadro de Texto:
+
+<img src="App_with_labels_and_button.png" alt="" width="200"/>
+
+Estos elementos los agregaremos desde el *Interface Builder*, y veremos en breve cómo conectarlos al código de nuestro programa mediante *Actions and Outlets*.
+
+Para agregar los elementos hacemos lo mismo que en la sección anterior:
+1. Oprimimos en la librería de objetos 
+2. Arrastramos los elementos a la vista
+
+<img src="mas_elementos.png" alt="" width="640"/>
+
+**Cambiar el color de fondo de la vista**
+
+Para poner el fondo de color celeste hay que:
+1. Deseleccionar cualquier elemento en la vista
+2. Ir al "Attributes Inspector"
+3. Elegir el color deseado
+
+<img src="color_de_fondo.png" alt="" width="540"/>
+
+Luego de agregar los elementos tendremos que agregar los "constraints" para asegurarnos que los elementos visuales estén bien posicionados:
+
+El método para agregar los constraints es similar a lo explicado antes, por ejemplo para agregar un constraint para establecer la distancia entre la imagen y la etiqueta "arrastramos" con el control presionado desde la etiqueta hasta la imagen, al soltar elegimos "Vertical Distance":
+
+<img src="constraint1.png" alt="" width="250"/>
+
+Similarmente para establecer la distancia entre la etiqueta y el borde derecho "arrastramos" con el control presionado desde la etiqueta hacia el borde derecho y elegimos "Leading Space":
+
+<img src="constraint2.png" alt="" width="250"/>
+
+Al haber agregado todos los constraints tenemos que obtener algo como esto:
+
+<img src="more_constraints.png" alt="" width="500"/>
+
+En este punto si ejecutamos la App, notaremos que la misma muestra todos los elementos, pero no hace absolutamente nada. Es hora de agregar código y conectarlo con la interfaz gráfica que acabamos de crear.
+
+### Actions and Outlets
