@@ -38,7 +38,7 @@ A lo largo de este tutorial vamos a ir desarrollando una App de Trivia (pregunta
 
 ### 1. Creando el Proyecto Trivia
 
-Esta es la pantalla de bienvenida:
+Al abrir el Xcode vemos la pantalla de bienvenida:
 
 <img src="welcome.png" alt="" width="500"/> 
 
