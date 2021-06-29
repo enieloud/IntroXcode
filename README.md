@@ -142,7 +142,7 @@ Se verá así:
 
 <img src="logo_agregado.png" alt="" width="450"/>
 
-**Agregar a la App mediante el Interface Builder**
+**Interface Builder**
 
 Como al crear el proyecto elegimos "Storyboards", Xcode creó un archivo: *Main.storyboard*:
 
